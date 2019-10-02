@@ -15,3 +15,4 @@ end
     y = self.find_by :rating == x
     y
 end
+end
