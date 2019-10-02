@@ -12,6 +12,7 @@ end
   end
   def self.least_popular_show
     xy = self.minimum(:rating)
+    binding.pry
     yy = self.find_by :rating == xy
     yy
 end
