@@ -10,4 +10,7 @@ end
   def self.lowest_rating
     self.minimum(:rating)
   end
+  def self.least_popular_show
+    x = self.minimum :rating
+    y = self.find_by :rating == x
 end
