@@ -11,8 +11,8 @@ end
     self.minimum(:rating)
   end
   def self.least_popular_show
-    x = self.minimum :rating
-    y = self.find_by :rating == x
-    y
+    xy = self.minimum :rating
+    yy = self.find_by :rating == xy
+    yy
 end
 end
