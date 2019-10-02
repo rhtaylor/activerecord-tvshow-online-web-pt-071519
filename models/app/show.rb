@@ -21,6 +21,6 @@ class Show <  ActiveRecord::Base
   end
   def self.popular_shows
     x = self.where('rating > 3')
-    binding.pry
+    x
   end
 end
