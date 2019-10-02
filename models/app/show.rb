@@ -6,7 +6,7 @@ class Show <  ActiveRecord::Base
     x = Show.maximum(:rating)
     y = Show.find_by :rating == x
     y
-end
+  end
   def self.lowest_rating
     self.minimum(:rating)
   end
@@ -15,5 +15,7 @@ end
 
     yy = self.find_by(rating: xy)
     yy
-end
+  end
+  def self.ratings_sum
+    self.sum("rating")
 end
