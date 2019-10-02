@@ -23,4 +23,7 @@ class Show <  ActiveRecord::Base
     x = self.where('rating > 3')
     x
   end
+  def self.shows_by_alphabetical_order
+    self.order(:name, :asc)
+  end
 end
